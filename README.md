@@ -2,19 +2,19 @@ _where passion becomes elegance._
 
 ---
 
-## (◕‿◕) c'est quoi
+## À propos de Zima
 
 Zima est un réseau social dédié **exclusivement au patinage artistique**. Pas d'algorithme, pas de pub, pas d'autres sports. Juste le patinage — feed chronologique, pour tout le monde du débutant au compétiteur.
 
 ---
 
-## (╥_╥) pourquoi ça existe
+## Notre mission
 
 Instagram et TikTok noient le contenu patinage dans du bruit. Les algos favorisent ce qui buzze, pas ce qui est beau. Zima c'est une **safe zone** — un endroit où la communauté patinage existe pour elle-même.
 
 ---
 
-## (ﾉ◕ヮ◕)ﾉ ce que Zima fait différemment
+## Nos engagements
 
 - feed **100% chronologique** — tu vois tout, dans l'ordre
 - **zéro pub**, zéro sponsorisé
@@ -24,7 +24,7 @@ Instagram et TikTok noient le contenu patinage dans du bruit. Les algos favorise
 
 ---
 
-## (￣▽￣) ce qu'on peut faire sur Zima
+## L'expérience sur Zima
 
 **Poster :**
 
@@ -43,20 +43,4 @@ Instagram et TikTok noient le contenu patinage dans du bruit. Les algos favorise
 - liste alphabétique de tous les comptes
 - recherche par nom
 
-**4 thèmes** au choix : Obsidian, Crystal, Lumine, Éther
-
----
-
-## (⊙_⊙) questions pour toi
-
-> Tu prends 2 minutes ? Tes réponses aident à définir ce que Zima devient.
-
-1. Tu utilises quoi actuellement pour suivre le patinage en ligne ?
-2. Tu rejoindrais Zima si ça existait ? Pourquoi ?
-3. Qu'est-ce qui te manque sur Instagram / TikTok pour le patinage ?
-4. Tu posterais toi-même, ou tu viendrais juste consommer du contenu ?
-5. Y'a une feature que tu voudrais absolument voir sur Zima ?
-
----
-
-_brief par Misha — projet en cours (◍•ᴗ•◍)_
+**4 thèmes** au choix : Obsidian, Ether
