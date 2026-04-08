@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="fr" data-theme="ether">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zima. — Connexion</title>
+    <link rel="stylesheet" href="../css/themes.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+  </head>
+  <body>
+    <a href="../index.html" class="back-logo"><em>Z</em>ima.</a>
+
+    <main class="auth-wrapper">
+      <div class="auth-card">
+        <div class="auth-header">
+          <h1>Bon retour.</h1>
+          <p>La piste t'attend.</p>
+        </div>
+
+        <div class="auth-form">
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="ton@email.com"
+              autocomplete="email"
+            />
+          </div>
+
+          <div class="field">
+            <label for="password">Mot de passe</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="••••••••"
+              autocomplete="current-password"
+            />
+            <button
+              class="toggle-pw"
+              type="button"
+              aria-label="Afficher le mot de passe"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                <circle cx="12" cy="12" r="3" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="auth-meta">
+            <label class="remember">
+              <input type="checkbox" id="remember" />
+              <span>Se souvenir de moi</span>
+            </label>
+            <a href="#" class="forgot">Mot de passe oublié ?</a>
+          </div>
+
+          <button class="btn-primary" type="button">Entrer sur la piste</button>
+        </div>
+
+        <div class="auth-footer">
+          <span>Pas encore de compte ?</span>
+          <a href="register.html">Rejoindre Zima</a>
+        </div>
+      </div>
+
+      <div class="auth-side">
+        <blockquote>
+          <p>
+            « Le patinage est la seule discipline où l'on tombe avec grâce. »
+          </p>
+        </blockquote>
+        <span class="side-deco">❄</span>
+      </div>
+    </main>
+
+    <script>
+      const btn = document.querySelector(".toggle-pw");
+      const pw = document.getElementById("password");
+      btn.addEventListener("click", () => {
+        pw.type = pw.type === "password" ? "text" : "password";
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="fr" data-theme="ether">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zima. — Inscription</title>
+    <link rel="stylesheet" href="../css/themes.css" />
+    <link rel="stylesheet" href="../css/register.css" />
+  </head>
+  <body>
+    <a href="../index.html" class="back-logo"><em>Z</em>ima.</a>
+
+    <main class="auth-wrapper">
+      <div class="auth-side">
+        <div class="side-content">
+          <span class="side-deco">❄</span>
+          <h2>Bienvenue sur la piste.</h2>
+          <ul class="perks">
+            <li>Feed 100% chronologique</li>
+            <li>Zéro pub, zéro algorithme</li>
+            <li>Likes entièrement privés</li>
+            <li>Exclusivement patinage</li>
+            <li>Totalement gratuit</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="auth-card">
+        <div class="auth-header">
+          <h1>Créer un compte.</h1>
+          <p>where passion becomes elegance.</p>
+        </div>
+
+        <div class="auth-form">
+          <div class="fields-row">
+            <div class="field">
+              <label for="firstname">Prénom</label>
+              <input
+                type="text"
+                id="firstname"
+                placeholder="Alexandra"
+                autocomplete="given-name"
+              />
+            </div>
+            <div class="field">
+              <label for="lastname">Nom</label>
+              <input
+                type="text"
+                id="lastname"
+                placeholder="Trusova"
+                autocomplete="family-name"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="username">Nom d'utilisateur</label>
+            <input
+              type="text"
+              id="username"
+              placeholder="@yunakim"
+              autocomplete="username"
+            />
+          </div>
+
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="ton@email.com"
+              autocomplete="email"
+            />
+          </div>
+
+          <div class="field">
+            <label for="password">Mot de passe</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="••••••••"
+              autocomplete="new-password"
+            />
+            <button
+              class="toggle-pw"
+              type="button"
+              aria-label="Afficher le mot de passe"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                <circle cx="12" cy="12" r="3" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="field-level">
+            <label>Ton niveau</label>
+            <div class="level-options">
+              <button class="level-btn" data-level="debutant" type="button">
+                Débutant
+              </button>
+              <button
+                class="level-btn"
+                data-level="intermediaire"
+                type="button"
+              >
+                Intermédiaire
+              </button>
+              <button class="level-btn" data-level="avance" type="button">
+                Avancé
+              </button>
+              <button class="level-btn" data-level="competiteur" type="button">
+                Compétiteur
+              </button>
+            </div>
+          </div>
+
+          <button class="btn-primary" type="button">Rejoindre Zima</button>
+        </div>
+
+        <div class="auth-footer">
+          <span>Déjà un compte ?</span>
+          <a href="login.html">Se connecter</a>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      const toggleBtn = document.querySelector(".toggle-pw");
+      const pw = document.getElementById("password");
+      toggleBtn.addEventListener("click", () => {
+        pw.type = pw.type === "password" ? "text" : "password";
+      });
+
+      document.querySelectorAll(".level-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          document
+            .querySelectorAll(".level-btn")
+            .forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>

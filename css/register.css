@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400&family=Space+Grotesk:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-primary);
+  background-image: url("../assets/images/Landing-back.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--text-primary);
+  font-family: var(--font-ui);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-color: rgba(12, 14, 20, 0.88);
+  z-index: 0;
+}
+
+body > * {
+  position: relative;
+  z-index: 1;
+}
+
+.back-logo {
+  position: fixed;
+  top: 2rem;
+  left: 2.5rem;
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--text-primary);
+  text-decoration: none;
+  letter-spacing: 0.06em;
+  transition: opacity 0.2s;
+  z-index: 10;
+}
+.back-logo:hover {
+  opacity: 0.6;
+}
+.back-logo em {
+  color: var(--accent);
+  font-style: italic;
+}
+
+.auth-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  min-height: 100vh;
+}
+
+/* ── side (left this time) ── */
+.auth-side {
+  flex: 0 0 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 3rem;
+  border-right: 0.5px solid var(--border);
+}
+
+.side-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.side-deco {
+  font-size: 28px;
+  opacity: 0.2;
+  user-select: none;
+}
+
+.side-content h2 {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  color: var(--text-primary);
+}
+
+.perks {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.perks li {
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--text-secondary);
+  padding: 0.75rem 0;
+  border-bottom: 0.5px solid var(--border);
+  letter-spacing: 0.04em;
+  position: relative;
+  padding-left: 1rem;
+}
+.perks li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* ── card (right) ── */
+.auth-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6rem 4rem 4rem;
+  gap: 2.5rem;
+  max-width: 560px;
+}
+
+.auth-header h1 {
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 0.04em;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+.auth-header p {
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  color: var(--text-secondary);
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.fields-row {
+  display: flex;
+  gap: 1.5rem;
+}
+.fields-row .field {
+  flex: 1;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  position: relative;
+}
+
+.field label,
+.field-level label {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.field input {
+  background: transparent;
+  border: none;
+  border-bottom: 0.5px solid var(--border);
+  padding: 0.65rem 2rem 0.65rem 0;
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--text-primary);
+  outline: none;
+  transition: border-color 0.2s;
+  width: 100%;
+}
+.field input::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.4;
+}
+.field input:focus {
+  border-bottom-color: var(--accent);
+}
+
+.toggle-pw {
+  position: absolute;
+  right: 0;
+  bottom: 0.65rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-secondary);
+  padding: 0;
+  line-height: 1;
+  transition: color 0.2s;
+}
+.toggle-pw:hover {
+  color: var(--text-primary);
+}
+
+/* ── level selector ── */
+.field-level {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.level-options {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.level-btn {
+  background: transparent;
+  border: 0.5px solid var(--border);
+  padding: 10px 0;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition:
+    border-color 0.2s,
+    color 0.2s;
+  text-transform: uppercase;
+}
+.level-btn:hover {
+  border-color: var(--text-secondary);
+  color: var(--text-primary);
+}
+.level-btn.active {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.btn-primary {
+  margin-top: 0.25rem;
+  background: transparent;
+  border: 0.5px solid var(--border);
+  padding: 14px 0;
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition:
+    border-color 0.2s,
+    color 0.2s;
+}
+.btn-primary:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.auth-footer {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--text-secondary);
+}
+.auth-footer a {
+  color: var(--text-primary);
+  text-decoration: none;
+  border-bottom: 0.5px solid var(--border);
+  padding-bottom: 1px;
+  transition:
+    border-color 0.2s,
+    color 0.2s;
+}
+.auth-footer a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+@media (max-width: 900px) {
+  .auth-side {
+    display: none;
+  }
+  .auth-card {
+    padding: 6rem 2rem 3rem;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .fields-row {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  .level-options {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

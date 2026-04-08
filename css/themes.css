@@ -1,0 +1,24 @@
+:root {
+  --font-display: "Cormorant Garamond", serif;
+  --font-ui: "Space Grotesk", sans-serif;
+}
+
+[data-theme="obsidian"] {
+  --bg-primary: #0c0e14;
+  --bg-surface: #161920;
+  --bg-card: #1e2230;
+  --accent: #c8102e;
+  --text-primary: #f0eee8;
+  --text-secondary: rgba(240, 238, 232, 0.55);
+  --border: rgba(240, 238, 232, 0.08);
+}
+
+[data-theme="ether"] {
+  --bg-primary: #1a1525;
+  --bg-surface: #231d35;
+  --bg-card: #2e2748;
+  --accent: #9b7fd4;
+  --text-primary: #ede8f5;
+  --text-secondary: rgba(237, 232, 245, 0.55);
+  --border: rgba(237, 232, 245, 0.08);
+}
