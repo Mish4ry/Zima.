@@ -203,6 +203,7 @@ body > * {
 }
 
 .btn-primary {
+  display: block;
   margin-top: 0.5rem;
   background: transparent;
   border: 0.5px solid var(--border);
@@ -212,6 +213,8 @@ body > * {
   font-weight: 400;
   letter-spacing: 0.14em;
   text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
   color: var(--text-primary);
   cursor: pointer;
   transition:

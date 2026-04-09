@@ -6,6 +6,10 @@
     <title>Zima. — Inscription</title>
     <link rel="stylesheet" href="../css/themes.css" />
     <link rel="stylesheet" href="../css/register.css" />
+    <link rel="icon" type="image/svg+xml" href="../assets//svg/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="../assets//ico/favicon.ico" />
+    <link rel="apple-touch-icon" href="../assets//images/favicon-180.png" />
+    <script src="../js/theme.js"></script>
   </head>
   <body>
     <a href="../index.html" class="back-logo"><em>Z</em>ima.</a>
@@ -122,7 +126,7 @@
             </div>
           </div>
 
-          <button class="btn-primary" type="button">Rejoindre Zima</button>
+          <a href="feed.html" class="btn-primary">Rejoindre Zima</a>
         </div>
 
         <div class="auth-footer">
@@ -132,21 +136,6 @@
       </div>
     </main>
 
-    <script>
-      const toggleBtn = document.querySelector(".toggle-pw");
-      const pw = document.getElementById("password");
-      toggleBtn.addEventListener("click", () => {
-        pw.type = pw.type === "password" ? "text" : "password";
-      });
-
-      document.querySelectorAll(".level-btn").forEach((btn) => {
-        btn.addEventListener("click", () => {
-          document
-            .querySelectorAll(".level-btn")
-            .forEach((b) => b.classList.remove("active"));
-          btn.classList.add("active");
-        });
-      });
-    </script>
+    <script src="../js/register.js"></script>
   </body>
 </html>

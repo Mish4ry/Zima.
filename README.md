@@ -43,4 +43,4 @@ Instagram et TikTok noient le contenu patinage dans du bruit. Les algos favorise
 - liste alphabétique de tous les comptes
 - recherche par nom
 
-**4 thèmes** au choix : Obsidian, Ether
+**2 thèmes** au choix : Obsidian, Éther

@@ -6,6 +6,10 @@
     <title>Zima. — Connexion</title>
     <link rel="stylesheet" href="../css/themes.css" />
     <link rel="stylesheet" href="../css/login.css" />
+    <link rel="icon" type="image/svg+xml" href="../assets//svg/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="../assets//ico/favicon.ico" />
+    <link rel="apple-touch-icon" href="../assets//images/favicon-180.png" />
+    <script src="../js/theme.js"></script>
   </head>
   <body>
     <a href="../index.html" class="back-logo"><em>Z</em>ima.</a>
@@ -63,7 +67,7 @@
             <a href="#" class="forgot">Mot de passe oublié ?</a>
           </div>
 
-          <button class="btn-primary" type="button">Entrer sur la piste</button>
+          <a href="feed.html" class="btn-primary">Entrer sur la piste</a>
         </div>
 
         <div class="auth-footer">
@@ -82,12 +86,6 @@
       </div>
     </main>
 
-    <script>
-      const btn = document.querySelector(".toggle-pw");
-      const pw = document.getElementById("password");
-      btn.addEventListener("click", () => {
-        pw.type = pw.type === "password" ? "text" : "password";
-      });
-    </script>
+    <script src="../js/login.js"></script>
   </body>
 </html>

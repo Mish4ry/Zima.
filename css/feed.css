@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400&family=Space+Grotesk:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-ui);
+  min-height: 100vh;
+}
+
+/* ── Navbar ── */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 2.5rem;
+  background: var(--bg-surface);
+  border-bottom: 0.5px solid var(--border);
+  z-index: 100;
+}
+
+.nav-logo {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--text-primary);
+  text-decoration: none;
+  letter-spacing: 0.06em;
+}
+
+.nav-logo em {
+  color: var(--accent);
+  font-style: italic;
+}
+
+.nav-logo:hover {
+  opacity: 0.8;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: var(--text-secondary);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.2s;
+  position: relative;
+}
+
+.nav-links a:hover {
+  color: var(--text-primary);
+}
+
+.nav-links a.active {
+  color: var(--accent);
+}
+
+.nav-links a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--accent);
+}
+
+/* ── Feed Container ── */
+.feed-container {
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 6rem 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* ── Post Card ── */
+.post {
+  background: var(--bg-surface);
+  border: 0.5px solid var(--border);
+  border-radius: 2px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem;
+  border-bottom: 0.5px solid var(--border);
+}
+
+.post-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--bg-card);
+  object-fit: cover;
+}
+
+.post-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.post-author {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.post-level {
+  font-size: 11px;
+  font-weight: 300;
+  color: var(--text-secondary);
+  letter-spacing: 0.08em;
+}
+
+.post-level.badge {
+  color: var(--accent);
+}
+
+.post-time {
+  font-size: 11px;
+  font-weight: 300;
+  color: var(--text-secondary);
+  opacity: 0.6;
+}
+
+.post-content {
+  padding: 1.25rem;
+}
+
+.post-content p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--text-primary);
+}
+
+.post-media {
+  border-top: 0.5px solid var(--border);
+}
+
+.post-media img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.post-actions {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-top: 0.5px solid var(--border);
+}
+
+.action-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--text-secondary);
+  padding: 0.25rem;
+  transition: color 0.2s, transform 0.1s;
+}
+
+.action-btn:hover {
+  color: var(--accent);
+}
+
+.action-btn:active {
+  transform: scale(0.95);
+}
+
+.action-btn.liked {
+  color: var(--accent);
+}
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .nav-links a {
+    font-size: 11px;
+    letter-spacing: 0.08em;
+  }
+
+  .feed-container {
+    padding: 5rem 1rem 2rem;
+  }
+
+  .post-header {
+    padding: 1rem;
+  }
+
+  .post-content {
+    padding: 1rem;
+  }
+
+  .post-actions {
+    padding: 0.75rem 1rem;
+  }
+}

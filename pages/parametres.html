@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="fr" data-theme="obsidian">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zima. — Paramètres</title>
+    <link rel="stylesheet" href="../css/themes.css" />
+    <link rel="stylesheet" href="../css/parametres.css" />
+    <link rel="icon" type="image/svg+xml" href="../assets//svg/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="../assets//ico/favicon.ico" />
+    <link rel="apple-touch-icon" href="../assets//images/favicon-180.png" />
+    <script src="../js/theme.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="feed.html" class="nav-logo"><em>Z</em>ima.</a>
+      <div class="nav-links">
+        <a href="feed.html">Feed</a>
+        <a href="explore.html">Explorer</a>
+        <a href="post.html">Poster</a>
+        <a href="profil.html">Profil</a>
+        <a href="parametres.html" class="active">Paramètres</a>
+      </div>
+    </nav>
+
+    <main class="settings-container">
+      <header class="settings-header">
+        <h1>Paramètres</h1>
+        <p>Personnalise ton expérience.</p>
+      </header>
+
+      <section class="settings-group">
+        <h2>Apparence</h2>
+
+        <div class="setting-item">
+          <div class="setting-info">
+            <span class="setting-label">Thème</span>
+            <span class="setting-desc"
+              >Choisis l'ambiance visuelle de Zima.</span
+            >
+          </div>
+          <div class="theme-options">
+            <button class="theme-btn active" data-theme="obsidian">
+              <span class="theme-preview obsidian"></span>
+              <span class="theme-name">Obsidian</span>
+            </button>
+            <button class="theme-btn" data-theme="ether">
+              <span class="theme-preview ether"></span>
+              <span class="theme-name">Éther</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="settings-group">
+        <h2>Compte</h2>
+
+        <div class="setting-item">
+          <div class="setting-info">
+            <span class="setting-label">E-mail</span>
+            <span class="setting-value">alexandra@exemple.com</span>
+          </div>
+          <button class="btn-setting">Modifier</button>
+        </div>
+
+        <div class="setting-item">
+          <div class="setting-info">
+            <span class="setting-label">Mot de passe</span>
+            <span class="setting-desc">••••••••</span>
+          </div>
+          <button class="btn-setting">Modifier</button>
+        </div>
+
+        <div class="setting-item">
+          <div class="setting-info">
+            <span class="setting-label">Niveau</span>
+            <span class="setting-value">Avancé</span>
+          </div>
+          <button class="btn-setting">Modifier</button>
+        </div>
+
+        <div class="setting-item">
+          <div class="setting-info">
+            <span class="setting-label">Badge influenceur</span>
+            <span class="setting-desc">Afficher le badge sur ton profil.</span>
+          </div>
+          <label class="toggle">
+            <input type="checkbox" />
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+      </section>
+
+      <section class="settings-group">
+        <h2>Confidentialité</h2>
+
+        <div class="setting-item">
+          <div class="setting-info">
+            <span class="setting-label">Profil privé</span>
+            <span class="setting-desc"
+              >Seuls les patineurs marqués peuvent voir tes posts.</span
+            >
+          </div>
+          <label class="toggle">
+            <input type="checkbox" />
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+
+        <div class="setting-item">
+          <div class="setting-info">
+            <span class="setting-label">Notifications par e-mail</span>
+            <span class="setting-desc"
+              >Recevoir les notifications par e-mail.</span
+            >
+          </div>
+          <label class="toggle">
+            <input type="checkbox" checked />
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+      </section>
+
+      <section class="settings-group danger">
+        <h2>Zone dangereuse</h2>
+
+        <div class="setting-item">
+          <div class="setting-info">
+            <span class="setting-label">Déconnexion</span>
+            <span class="setting-desc">Te déconnecter de ton compte.</span>
+          </div>
+          <button class="btn-danger">Déconnexion</button>
+        </div>
+
+        <div class="setting-item">
+          <div class="setting-info">
+            <span class="setting-label">Supprimer le compte</span>
+            <span class="setting-desc">Cette action est irréversible.</span>
+          </div>
+          <button class="btn-danger">Supprimer</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="../js/parametres.js"></script>
+  </body>
+</html>
